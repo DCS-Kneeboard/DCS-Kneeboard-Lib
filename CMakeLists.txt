@@ -4,7 +4,7 @@ project(KneeboardLib LANGUAGES CXX VERSION 0.1)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(KneeboardLib SHARED src/dllmain.cpp core.h kneeboard.cpp kneeboard.h)
+add_library(KneeboardLib SHARED src/dllmain.cpp src/kneeboard.cpp src/kneeboard.h)
 target_include_directories(KneeboardLib PUBLIC include)
 
 # Link lua51.lib
