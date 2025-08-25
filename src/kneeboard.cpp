@@ -29,7 +29,7 @@ void lib_init() {
         // DCS cannot handle exceptions across Lua boundary, so log and ignore
         // e.g., write to a file for debugging
         // std::ofstream("C:\\Temp\\dcs_socket_error.txt") << e.what();
-        sock.reset();                  // mark as invalid
+        sock.reset();
     }
 }
 
